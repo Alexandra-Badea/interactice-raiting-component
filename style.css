@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass";
+} 
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    max-width: 300px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.container .star img {
+    padding: 10px;
+    background-color: hsla(216, 12%, 54%, .1);
+    border-radius: 50%;
+}
+
+.container .opinion h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.container .opinion p {
+    color: hsl(217, 12%, 63%);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.container .rates {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.container .rates .rate {
+    padding: 10px 15px;
+    background-color: hsla(216, 12%, 54%, .1);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: hsl(217, 12%, 63%);
+    outline: none;
+}
+
+.rates .rate:hover,
+.rates .rate:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container .btn button {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 15px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+.container button:hover,
+.container button:focus {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.container .response {
+    display: none;
+}
+
+.container .response img {
+    display: block;
+    margin : 5px auto;
+}
+
+.response .mark {
+    margin: 25px auto;
+}
+
+.response .mark .selection {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    background-color: hsla(216, 12%, 54%, .1);
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 16px;
+    color: hsl(25, 97%, 53%);
+    font-size: 12px;
+}
+
+.msg-tanks h2 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.msg-tanks p {
+    color: hsl(217, 12%, 63%);
+    margin: 13px;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+footer .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+}
+
+footer .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 55%;
+        max-width: initial;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 70%;
+    }
+}
